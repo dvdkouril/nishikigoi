@@ -16,12 +16,16 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
 		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
-		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		6681B0DF3A3E43D6B3D97215 /* nishikigoi_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1584DF5B42B64482B52286A3 /* nishikigoi_Prefix.pch */; };
-		4EC2C049503D49C1ABB62132 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = F507019FC6B8459B848C8EFC /* CinderApp.icns */; };
-		0AFC62BDAF7346F2A2D3A04D /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 662F148C43C64EC9A403980B /* Resources.h */; };
 		0281EDBD1908419BA03DC988 /* nishikigoiApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6F54291E749C88C1355AB /* nishikigoiApp.cpp */; };
+		4EC2C049503D49C1ABB62132 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = F507019FC6B8459B848C8EFC /* CinderApp.icns */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		6F01F25020026D51002694FA /* SceneObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F01F24E20026D51002694FA /* SceneObject.cpp */; };
+		6F01F25320026F1A002694FA /* MeshObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F01F25120026F1A002694FA /* MeshObject.cpp */; };
+		6F01F2562009D2D7002694FA /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F01F2542009D2D7002694FA /* SceneManager.cpp */; };
+		6F01F2592009D743002694FA /* FBXLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F01F2572009D743002694FA /* FBXLoader.cpp */; };
+		6F01F25C200A42A0002694FA /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F01F25A200A429F002694FA /* Utility.cpp */; };
+		6F256092204C3C5A00DD7736 /* JointObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F256091204C3C5A00DD7736 /* JointObject.cpp */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,15 +39,27 @@
 		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1584DF5B42B64482B52286A3 /* nishikigoi_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = nishikigoi_Prefix.pch; sourceTree = "<group>"; };
+		1DA6F54291E749C88C1355AB /* nishikigoiApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = nishikigoiApp.cpp; path = ../src/nishikigoiApp.cpp; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		662F148C43C64EC9A403980B /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		6F01F24E20026D51002694FA /* SceneObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneObject.cpp; path = ../src/SceneObject.cpp; sourceTree = "<group>"; };
+		6F01F24F20026D51002694FA /* SceneObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SceneObject.hpp; path = ../src/SceneObject.hpp; sourceTree = "<group>"; };
+		6F01F25120026F1A002694FA /* MeshObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MeshObject.cpp; path = ../src/MeshObject.cpp; sourceTree = "<group>"; };
+		6F01F25220026F1A002694FA /* MeshObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MeshObject.hpp; path = ../src/MeshObject.hpp; sourceTree = "<group>"; };
+		6F01F2542009D2D7002694FA /* SceneManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = ../src/SceneManager.cpp; sourceTree = "<group>"; };
+		6F01F2552009D2D7002694FA /* SceneManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SceneManager.hpp; path = ../src/SceneManager.hpp; sourceTree = "<group>"; };
+		6F01F2572009D743002694FA /* FBXLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FBXLoader.cpp; path = ../src/FBXLoader.cpp; sourceTree = "<group>"; };
+		6F01F2582009D743002694FA /* FBXLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = FBXLoader.hpp; path = ../src/FBXLoader.hpp; sourceTree = "<group>"; };
+		6F01F25A200A429F002694FA /* Utility.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Utility.cpp; path = ../src/Utility.cpp; sourceTree = "<group>"; };
+		6F01F25B200A42A0002694FA /* Utility.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Utility.hpp; path = ../src/Utility.hpp; sourceTree = "<group>"; };
+		6F256090204C3C2C00DD7736 /* JointObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = JointObject.hpp; path = ../src/JointObject.hpp; sourceTree = "<group>"; };
+		6F256091204C3C5A00DD7736 /* JointObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JointObject.cpp; path = ../src/JointObject.cpp; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* nishikigoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nishikigoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DA6F54291E749C88C1355AB /* nishikigoiApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/nishikigoiApp.cpp; sourceTree = "<group>"; name = nishikigoiApp.cpp; };
-		662F148C43C64EC9A403980B /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
-		F507019FC6B8459B848C8EFC /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
-		D62529D4861B445CAD711145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
-		1584DF5B42B64482B52286A3 /* nishikigoi_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = nishikigoi_Prefix.pch; sourceTree = "<group>"; name = nishikigoi_Prefix.pch; };
+		D62529D4861B445CAD711145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F507019FC6B8459B848C8EFC /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				1DA6F54291E749C88C1355AB /* nishikigoiApp.cpp */,
+				6F01F24E20026D51002694FA /* SceneObject.cpp */,
+				6F01F25120026F1A002694FA /* MeshObject.cpp */,
+				6F256091204C3C5A00DD7736 /* JointObject.cpp */,
+				6F01F2542009D2D7002694FA /* SceneManager.cpp */,
+				6F01F2572009D743002694FA /* FBXLoader.cpp */,
+				6F01F25A200A429F002694FA /* Utility.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -124,18 +153,17 @@
 			name = nishikigoi;
 			sourceTree = "<group>";
 		};
-		01B97315FEAEA392516A2CEA /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Blocks;
-			sourceTree = "<group>";
-		};
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
 				662F148C43C64EC9A403980B /* Resources.h */,
 				1584DF5B42B64482B52286A3 /* nishikigoi_Prefix.pch */,
+				6F01F2552009D2D7002694FA /* SceneManager.hpp */,
+				6F01F24F20026D51002694FA /* SceneObject.hpp */,
+				6F01F25220026F1A002694FA /* MeshObject.hpp */,
+				6F256090204C3C2C00DD7736 /* JointObject.hpp */,
+				6F01F2582009D743002694FA /* FBXLoader.hpp */,
+				6F01F25B200A42A0002694FA /* Utility.hpp */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -184,6 +212,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "nishikigoi" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -219,7 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F01F25C200A42A0002694FA /* Utility.cpp in Sources */,
+				6F256092204C3C5A00DD7736 /* JointObject.cpp in Sources */,
 				0281EDBD1908419BA03DC988 /* nishikigoiApp.cpp in Sources */,
+				6F01F2592009D743002694FA /* FBXLoader.cpp in Sources */,
+				6F01F25320026F1A002694FA /* MeshObject.cpp in Sources */,
+				6F01F2562009D2D7002694FA /* SceneManager.cpp in Sources */,
+				6F01F25020026D51002694FA /* SceneObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,21 +266,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = nishikigoi_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = nishikigoi_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					"\"/Applications/Autodesk/FBX SDK/2018.1.1/include\"",
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2018.1.1/lib/clang/debug/libfbxsdk.a\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = nishikigoi;
 				SYMROOT = ./build;
@@ -262,16 +305,23 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = nishikigoi_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = nishikigoi_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					"\"/Applications/Autodesk/FBX SDK/2018.1.1/include\"",
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"",
+					"\"/Applications/Autodesk/FBX SDK/2018.1.1/lib/clang/release/libfbxsdk.a\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = nishikigoi;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -284,7 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../../../cinder_0.9.1_mac";
+				CINDER_PATH = ../../../../cinder_0.9.1_mac;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				ENABLE_TESTABILITY = YES;
@@ -302,7 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../../../cinder_0.9.1_mac";
+				CINDER_PATH = ../../../../cinder_0.9.1_mac;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
