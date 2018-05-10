@@ -94,6 +94,14 @@ void nishikigoiApp::draw()
 	gl::clear( Color( 0, 0, 0 ) );
     //gl::drawCube(vec3(0), vec3(1));
     gl::draw(mVertexBuffer);
+    
+    {
+        gl::ScopedGlslProg billboard(mSimpleBillboardShader);
+        mSimpleBillboardShader->uniform("Scale", 1.0f);
+        mSimpleBillboardShader->uniform("modelViewMatrix", mCamera.getViewMatrix());
+        mSimpleBillboardShader->uniform("projectionMatrix", mCamera.getProjectionMatrix());
+        gl::drawArrays(GL_POINTS, 0, 10);
+    }
 }
 
 CINDER_APP( nishikigoiApp, RendererGl )
