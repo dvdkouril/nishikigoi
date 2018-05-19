@@ -9,5 +9,10 @@
 #define UbahnScene_hpp
 
 #include <stdio.h>
+#include "../Scene.hpp"
+
+class UbahnScene : Scene {
+    
+};
 
 #endif /* UbahnScene_hpp */

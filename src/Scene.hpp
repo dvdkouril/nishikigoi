@@ -10,4 +10,17 @@
 
 #include <stdio.h>
 
+using namespace ci;
+using namespace ci::app;
+using namespace std;
+
+class Scene {
+public:
+    void init();
+    void draw();
+    void update();
+    
+    void mouseDown(MouseEvent event);
+};
+
 #endif /* Scene_hpp */

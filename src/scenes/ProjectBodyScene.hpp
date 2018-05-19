@@ -9,5 +9,10 @@
 #define ProjectBodyScene_hpp
 
 #include <stdio.h>
+#include "../Scene.hpp"
+
+class ProjectBodyScene : Scene {
+    
+};
 
 #endif /* ProjectBodyScene_hpp */
