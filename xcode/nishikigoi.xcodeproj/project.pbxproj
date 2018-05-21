@@ -327,9 +327,11 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(CINDER_PATH)/include\"",
 					"\"/Applications/Autodesk/FBX SDK/2018.1.1/include\"",
+					/usr/local/Cellar/boost/1.67.0_1/include,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.67.0_1/lib;
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"",
 					"\"/Applications/Autodesk/FBX SDK/2018.1.1/lib/clang/debug/libfbxsdk.a\"",
@@ -361,9 +363,11 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(CINDER_PATH)/include\"",
 					"\"/Applications/Autodesk/FBX SDK/2018.1.1/include\"",
+					/usr/local/Cellar/boost/1.67.0_1/include,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.67.0_1/lib;
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"",
 					"\"/Applications/Autodesk/FBX SDK/2018.1.1/lib/clang/release/libfbxsdk.a\"",

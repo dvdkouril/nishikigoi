@@ -16,11 +16,13 @@ using namespace std;
 
 class Scene {
 public:
-    void init();
-    void draw();
-    void update();
+    virtual void init();
+    virtual void draw();
+    virtual void update();
     
-    void mouseDown(MouseEvent event);
+    virtual void mouseDown(MouseEvent event);
+    virtual void mouseUp(MouseEvent event);
+    virtual void mouseDrag(MouseEvent event);
 };
 
 #endif /* Scene_hpp */

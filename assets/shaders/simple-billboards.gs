@@ -41,7 +41,7 @@ void main()
   //int proteinType = int(ProteinInstanceInfo[INPUT[0].instanceId].x);
   //vec4 col = vec4(ProteinTypesColors[proteinType].xyz, 1.0);
 
-  OUTPUT.color = vec4(1.0, 0.0, 0.0, 1.0);
+  OUTPUT.color = vec4(0.0, 0.0, 0.0, 1.0);
   OUTPUT.radius = 1.0;
   OUTPUT.instanceId = INPUT[0].instanceId;
   OUTPUT.atomId = 0;

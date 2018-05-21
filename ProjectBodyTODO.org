@@ -1,0 +1,11 @@
+* Project Body TODOs
+** TODO Data loading
+*** TODO Fetching sleep info from Fitbit API
+*** TODO Put existing (manually tracked) data into a file format
+*** TODO Implement data loading from file
+** TODO Calendar rendering
+*** TODO Base calendar rendering
+*** TODO Metaballs rendering of streak data (no fap)
+** TODO Interaction
+*** TODO Camera fixed and only going up/down with mouse drag
+*** TODO Smoothing

@@ -1,6 +1,6 @@
 #version 410
 
-in vec3 position;
+layout(location = 0) in vec3 position;
 
 out VSOUTPUT
 {
@@ -17,9 +17,8 @@ uniform mat4 modelViewMatrix;
 
 void main(void)
 {
-  vec3 pos = (modelViewMatrix * vec4(0, 0, 0, 1.0)).xyz;
-
-  //vec3 pos = (modelViewMatrix * vec4(position, 1.0)).xyz;
+  vec3 pos = (modelViewMatrix * vec4(10 * position, 1.0)).xyz;
+  //vec3 pos = (modelViewMatrix * vec4(5, 0, 0, 1.0)).xyz;
 
   OUTPUT.positionVS = pos;
   OUTPUT.instanceId = 0;

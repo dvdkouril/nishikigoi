@@ -11,8 +11,13 @@
 #include <stdio.h>
 #include "../Scene.hpp"
 
-class FluidsFunScene {
+class FluidsFunScene : Scene {
+    void init() override;
+    void draw() override;
     
+private:
+    gl::VboMeshRef mVertexBuffer;
+    gl::VboRef mIndexBuffer;
 };
 
 #endif /* FluidsFunScene_hpp */
